@@ -1,0 +1,68 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#map {
+    height: calc(100vh - 56px);
+}
+
+/* legend styling for our leaflet choropleth legends--Inundation Depth and Population Growth*/
+.legend {
+    line-height: 18px;
+    color: #555;
+}
+.legend i {
+    width: 18px;
+    height: 18px;
+    float: left;
+    margin-right: 8px;
+    opacity: 0.7;
+}
+
+/*create style for svg custom legends for Land Use Changes polygon layer and Buildings layer*/
+
+svg .legendSvgRes { 
+    fill: #ff9900;
+    stroke: black; 
+    stroke-width: 1;
+    opacity: 0.75;
+}
+
+svg .legendSvgVtoRes { 
+    fill: #660066;
+    stroke: black; 
+    stroke-width: 1;
+    opacity: 0.75;
+}
+
+svg .legendSvgVtoCom { 
+    fill: #e6e600;
+    stroke: black; 
+    stroke-width: 1;
+    opacity: 0.75;
+}
+
+svg .legendSvgComToRes { 
+    fill: #ff3377;
+    stroke: black; 
+    stroke-width: 1;
+    opacity: 0.75;
+}
+
+svg .legendSvgOther { 
+    fill: #4d3300;
+    stroke: black; 
+    stroke-width: 1;
+    opacity: 0.75;
+}
+
+svg .legendSvgBuildings { 
+    fill: #b30000;
+    stroke: black; 
+    stroke-width: 1;
+    opacity: 0.75;
+}
+
+
+

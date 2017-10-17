@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <title>Harvey and Development</title>
+      <meta charset="utf-8" />
+      <!-- For full screen Leaflet maps, add the following meta tag to set parameters in the viewport-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+      <!-- Including Leaflet CSS -->
+      <link type="text/css" rel="stylesheet" href="libraries/leaflet-1.2/leaflet.css"/>
+      <!-- Bootstrap styles -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+      <!-- Including our custom CSS -->
+      <link type="text/css" rel="stylesheet" href="css/style.css"/>
+      <link href="libraries/leaflet-control-geocoder/Control.Geocoder.css" type="text/css" rel="stylesheet" />  <!--leaflet geocoder-->
+    </head>
+    <body>
+
+      <!--navbar created using bootstrap to carry the title of the page-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Houston's Growth and its Relationship with Hurricane Harvey</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            
+          </nav>
+
+          <div class="container-fluid">
+            <div class="row">
+            <!--Map will take up 9/12ths of the page-->
+              <div class="col-sm-9">
+                <div id="map"></div>
+              </div>
+                <!--side panel will take up 3/12ths of the page -->
+              <div class="col-sm-3">
+                <span class="pull-right">
+                <div class="panel panel-default">
+                  <div class="panel-heading"><strong>The Houston Growth and Hurricane Harvey Map</strong><br></div>
+                    <div class="panel-body"><br>Welcome to The Houston Growth and Hurricane Harvey Map. This map provides a visualization of Hurricane Harvey's effects on Houston, Texas, and how the development of infrastructue in flood-prone areas continues to put the city's residents at risk. This map functions as an obervation of Houston's growth and development over time on a small scale. By zooming into a neighborhood, you'll be able to see the population growth, damaged buildings, and proposed development plans by 2020. Scroll down to learn how to interact with the map, and to learn more about Houston's relationship with flooding. <br><br><br> <br><br>
+
+  
+                     <br> <a href="#"></a> </div>
+                  </span>
+                </div>
+            </div>
+          
+             
+              <!-- large panel below map for more information, takes up entire width of page--> 
+              <div class="container-fluid">
+    <div class="row">
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h3 class="panel-title">Harvey and The Growth of a City</h3>
+                <span class="pull-right">
+                </span>
+            </div>            
+            <div class="panel-body">
+                <div class="tab-content">
+                    <div class="tab-pane active" id="test">
+                      <strong> What does this Map Show? </strong><br><br>
+
+                       This map divides Houston into different neighborhoods and displays the inundation (flooding) level that occurred during Hurricane Harvey in August of 2017. By clicking on the neighborhood area, you can reveal the name of the neighborhood, the level of inundation, and the number of households affected. Zoom in to get started. <br><br>
+
+                      This interactive map allows the user to learn more by zooming into the desired neighborhood. Begin by zooming in towards the Houston neighborhood boundaries, and you'll see that FEMA's estimates on damaged buildings appear as red dots.<br><br>
+
+                      Zoom in further and you'll be able see how each block group has grown in population from 2012-2017.<br><br>
+
+                      Zoom in one last time and you'll see where developers are planning to build by 2020 (announced in 2015). These land use changes are divided by residential areas that are growing (increasing the number of housing units), areas that were originally vacant (including farmland) that developers are planning to convert into residences, and the building of commercial and industrial infrastructure on vacant land. <br><br>
+
+                      <strong>Why is this important?</strong><br><br>
+
+                      Experts continue to point to <a href = https://projects.propublica.org/houston-cypress/> accelerated development </a> and climate change as two of the main reasons why Harvey's effects were so severe. The increased construction of residential and commercial spaces over wetlands and prairies that are important for absorbing water and diminishing the effects of flooding has led to more property damage than previous flooding events. Developers are also continuing to build and sell houses to new residents in highly flood-prone areas, resulting in an increased number of displaced people after hurricanes. <br><br>
+
+                      This map looks closely at small-scale growth occurring throughout Harris County, and examines how developers are planning to change the city by 2020, sometimes in areas that are highly susceptible to floods. <br><br>
+
+                      <strong>Limitations and Future Goals</strong><br><br>
+
+                      The goals of this project are to monitor the ways in which small-scale development throughout the city of Houston may play a role in the amplified effects of flooding on the city's residents. Due to the scope of this project and data made available, the project does not seek to act as an official guide to flood-causing factors and cannot answer the question of why certain areas are more flood-prone. Instead, this map provides viewers with a glimpse into a rapidly growing city and its relationship with tropical storms. Development plans are likely to change from those included in this project, as these plans were last updated in 2015. As Houston recovers from Harvey, it is unknown whether developers will refrain from building on flood-prone areas or if new residents will be less likely to buy homes in these neighborhoods. A further exploration into a number of other factors that may have contributed to the estimated damage will help to build a better picture of Houston's ability to prepare for another flood. <br><br>
+
+                      <strong>Data Included in the Project</strong> <br> <br>
+
+                      <a href= https://services.arcgis.com/lqRTrQp2HrfnJt8U/ArcGIS/rest/services/CTAsummary4/FeatureServer>Inundation Depth by neighborhood</a><br>
+                      <a href= https://services1.arcgis.com/Hp6G80Pky0om7QvQ/arcgis/rest/services/FEMA_Damage_Assessments_Harvey_20170829/FeatureServer>Damage Assessment by FEMA</a><br>
+                      <a href=https://gis.h-gac.com/arcgis/rest/services/Land_Use/Announced_Changes_2020/MapServer>Announced Land Use Changes 2020</a><br>
+                      <a href=http://services.arcgisonline.com/arcgis/rest/services/Demographics/USA_Projected_Population_Change/MapServer>Population Change 2000-2010, 2010-2012, 2012-2017</a> <br><br>
+
+                      <strong>Interested in Learning More?</strong> <br><br>
+
+                      <a href=https://www.hcfcd.org/interactive-mapping-tools/harris-county-flood-education-mapping-tool/>Harris County Flood Control District(HCFCD) Flood Education Mapping Tool</a><br>
+                      <a href=http://www.datahouston.org/Map.html>Houston Interactive Maps by Houston Community Data Connections (HCDC)</a><br>
+                      <a href=http://www.houstonchronicle.com/news/houston-texas/houston/article/Houston-s-development-boom-and-reduction-of-8403838.php>The Houston Chronicle on the Dangers of Development</a><br>
+                      <a href=https://www.texastribune.org/hell-and-high-water/> ProPublica and the Texas Tribune on Why Houston isn't Ready for the Next Hurricane</a><br>
+                      <a href=https://www.revealnews.org/episodes/the-perfect-storm/> Reveal Podcast on Houston and Hurricanes</a>
+
+
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+            </div>
+          </div>
+
+    </body>
+    <!-- Including Leaflet Javascript Library -->
+    <script type="text/javascript" src="libraries/leaflet-1.2/leaflet.js"></script>
+
+
+    <script
+    src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+
+    <!--geocoder plugin from Leaflet, so that users can search location-->
+
+    <script type="text/javascript" src="libraries/leaflet-control-geocoder/Control.Geocoder.js"></script>
+
+
+<!--bootstrap plugins-->
+
+    <script src="https://unpkg.com/esri-leaflet@2.1.1/dist/esri-leaflet.js"
+    integrity="sha512-ECQqaYZke9cSdqlFG08zSkudgrdF6I1d8ViSa7I3VIszJyVqw4ng1G8sehEXlumdMnFYfzY0tMgdQa4WCs9IUw=="
+    crossorigin=""></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+
+    <!-- Including our custom Javascript -->  
+    <script type="text/javascript" src="js/jsscript.js"></script>
+
+</html>
